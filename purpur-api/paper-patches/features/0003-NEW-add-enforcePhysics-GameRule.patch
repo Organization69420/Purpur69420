@@ -1,0 +1,21 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: pramsing <patrik1997@live.dk>
+Date: Sun, 18 Jan 2026 12:27:07 +0100
+Subject: [PATCH] NEW: add enforcePhysics GameRule
+
+
+diff --git a/src/main/java/org/bukkit/GameRules.java b/src/main/java/org/bukkit/GameRules.java
+index c1ad190d537b6b7086ac78c6f5cdecc0accd30dc..e9d05e3db78d1d6844abd33c3104563b0787cb33 100644
+--- a/src/main/java/org/bukkit/GameRules.java
++++ b/src/main/java/org/bukkit/GameRules.java
+@@ -10,6 +10,10 @@ import org.jspecify.annotations.NullMarked;
+ @NullMarked
+ public final class GameRules {
+ 
++    // Custom Start
++    public static final GameRule<Boolean> ENFORCE_PHYSICS = getRule("enforce_physics");
++    // Custom End
++
+     // Start generate - GameRules
+     public static final GameRule<Boolean> ADVANCE_TIME = getRule("advance_time");
+ 
